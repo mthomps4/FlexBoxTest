@@ -1,0 +1,116 @@
+body {
+	background-color: black;
+	width:95%;
+	margin:0 auto;
+}
+
+h1 {
+	background-color:#888;
+	text-align: center;
+	margin:0;
+	padding:.75em;
+}
+
+h2{
+	background-color:#ddd;
+	padding:5px;
+	text-align: center;
+	margin:0;
+}
+
+p.box {
+	text-align: center;
+	background-color:#ddd;
+	padding: 10px;
+	margin:0;
+}
+.topSpacing{
+	margin-top:30px;
+}
+
+.content-border{
+	border:5px solid #FFF;
+}
+
+/*********** 1st Flex Box *********/
+
+nav {
+	width:95%;
+	margin:10px auto;
+	background-color:#888;
+	border:solid 2px cyan;
+}
+
+nav ul#mainNavigation {
+list-style: none;
+margin:10px;
+height: 200px;
+border: solid 2px red;
+padding:0;
+	display:flex;
+	justify-content:space-around;
+	align-content: center;
+	align-items:center; /*Verticle align Items to center of UL*/
+}
+
+nav ul#mainNavigation li {
+	border: 2px solid green;
+	height:30px;
+	width:30px;
+	background-color:#ddd;
+
+/*Center Content Verticallyand Horz inside LI Blocks*/
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+}
+
+
+
+/*********** 2nd Flex Box *********/
+
+
+.FB{
+	width:95%;
+	margin:10px auto;
+	border: solid 3px cyan;
+	background-color:#888;
+
+	display:flex;
+	justify-content:center; /*Center Take2 Div inside .FB*/
+}
+
+#Fruit {
+	border:2px solid red;
+	margin:20px;
+
+	display:flex;
+	justify-content:center; /*Centers UL in #Take2 Div*/
+	flex-grow:1;
+}
+
+#Fruit ul {
+	list-style:none;
+	list-style-position: inside; /*bullets inside*/
+	padding:30px; /*no padding for bullets makes li 100% of UL*/
+	border: solid 2px white;
+	margin:5px; /*removes inherited margin*/
+	width:50%;
+	background-color:aqua; /*hidden by li - used to test 100% coverage*/
+
+	display:flex;
+	flex-direction:column;
+}
+
+#Fruit .col li {
+	background-color:#ddd;
+	border:solid 1px green;
+	padding:15px;
+	margin:3px;
+
+	display:flex;
+	flex-grow:1;
+	flex-wrap:nowrap;
+	justify-content: center;
+}
