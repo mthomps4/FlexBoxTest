@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<HEAD>
+<META charset="utf-8">
+<TITLE>FlexBox Test</TITLE>
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<link rel="stylesheet" href="FlexTest.css" type="text/css">
+
+</HEAD>
+
+<BODY>
+	<h1>Flex Box Testing </h1>
+
+	<h2 class="topSpacing">1st Flex Box </h2>
+	<div class="content-border">
+
+				<div id="nav">
+				<ul id="mainNavigation">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
+			<p class="box"> UL = justify-content:space-around;
+			align-content: center;
+			align-items:center;</p>
+
+	</div>
+
+
+
+	<h2 class="topSpacing">2nd Flex Box </h2>
+	<div class="content-border">
+
+
+		<div class="FB">
+			<div id="Fruit">
+				<ul class="col">
+					<li>Orange</li>
+					<li>Banannannannna</li>
+					<li>Grape</li>
+					<li>Pear</li>
+				</ul>
+			</div>
+
+		</div>
+		<p class="box">Main = justify-content: center; flex-grow:1; <br>
+			UL = width:50%; flex-direction: Column; <br>
+			LI = display:flex;
+			flex-grow:1;
+			flex-wrap:nowrap;
+			justify-content: center;
+		 </p>
+	</div>
+
+	<h2 class="topSpacing">3rd Flex Box </h2>
+	<div class="content-border">
+
+				<div id="Navigation">
+					<h3> Title </h3>
+				<ul>
+					<li> Home
+						<ul class="innerNav">
+							<li> 1 </li>
+							<li> 2 </li>
+							<li> 3 </li>
+						</ul>
+					</li>
+					<li>About</li>
+					<li>Contact</li>
+					<li>Blog</li>
+				</ul>
+			</div>
+			<p class="box">
+				#NavBox = FlexRow; align-items:center; <br>
+				Title = margin-right:auto; //forces other items right. <br>
+				UL = FlexRow - width:50%; <br>
+				LI = margin-right for list spacing. flex-grow:1; flex-basis:0; <br>
+				InnerNav = flex-direction:column;
+				align-items: center;
+				width:100%;
+			</p>
+
+	</div>
+
+</BODY>
+</HTML>

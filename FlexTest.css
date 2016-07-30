@@ -1,51 +1,56 @@
 body {
-	background-color: black;
 	width:95%;
 	margin:0 auto;
 }
 
+
+.topSpacing{
+	margin-top:30px;
+}
+
 h1 {
-	background-color:#888;
+	background-color:blue;
+	color:white;
 	text-align: center;
 	margin:0;
 	padding:.75em;
 }
 
 h2{
-	background-color:#ddd;
+	background-color:#5bc0de;
+	color:white;
 	padding:5px;
 	text-align: center;
 	margin:0;
 }
 
-p.box {
-	text-align: center;
-	background-color:#ddd;
-	padding: 10px;
-	margin:0;
-}
-.topSpacing{
-	margin-top:30px;
-}
 
 .content-border{
-	border:5px solid #FFF;
+	border:5px solid #5bc0de;
+}
+
+
+p.box {
+	text-align: center;
+	background-color:#5bc0de;
+	padding: 10px;
+	margin:0;
 }
 
 /*********** 1st Flex Box *********/
 
-nav {
+#nav {
 	width:95%;
 	margin:10px auto;
 	background-color:#888;
-	border:solid 2px cyan;
+	border:solid 4px blue;
 }
 
-nav ul#mainNavigation {
+#nav #mainNavigation {
 list-style: none;
 margin:10px;
 height: 200px;
-border: solid 2px red;
+border: solid 2px white;
 padding:0;
 	display:flex;
 	justify-content:space-around;
@@ -53,11 +58,11 @@ padding:0;
 	align-items:center; /*Verticle align Items to center of UL*/
 }
 
-nav ul#mainNavigation li {
-	border: 2px solid green;
+#nav ul#mainNavigation li {
+	border: 3px solid blue;
 	height:30px;
 	width:30px;
-	background-color:#ddd;
+	background-color:white;
 
 /*Center Content Verticallyand Horz inside LI Blocks*/
 	display:flex;
@@ -74,19 +79,16 @@ nav ul#mainNavigation li {
 .FB{
 	width:95%;
 	margin:10px auto;
-	border: solid 3px cyan;
+	border: solid 4px blue;
 	background-color:#888;
-
-	display:flex;
-	justify-content:center; /*Center Take2 Div inside .FB*/
 }
 
 #Fruit {
-	border:2px solid red;
+	border:2px solid white;
 	margin:20px;
 
 	display:flex;
-	justify-content:center; /*Centers UL in #Take2 Div*/
+	justify-content:center;
 	flex-grow:1;
 }
 
@@ -94,18 +96,18 @@ nav ul#mainNavigation li {
 	list-style:none;
 	list-style-position: inside; /*bullets inside*/
 	padding:30px; /*no padding for bullets makes li 100% of UL*/
-	border: solid 2px white;
+	border: solid 2px red;
 	margin:5px; /*removes inherited margin*/
 	width:50%;
-	background-color:aqua; /*hidden by li - used to test 100% coverage*/
+	background-color:black; /*hidden by li - used to test 100% coverage*/
 
 	display:flex;
 	flex-direction:column;
 }
 
 #Fruit .col li {
-	background-color:#ddd;
-	border:solid 1px green;
+	background-color:#aaa;
+	border:solid 2px blue;
 	padding:15px;
 	margin:3px;
 
@@ -113,4 +115,43 @@ nav ul#mainNavigation li {
 	flex-grow:1;
 	flex-wrap:nowrap;
 	justify-content: center;
+}
+
+
+
+/*** 3rd ***/
+#Navigation{
+	width:95%;
+	margin:10px auto;
+	border: solid 4px blue;
+
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+
+#Navigation h3{
+	margin-right:auto;
+	margin-left: 2em;
+}
+
+#Navigation ul {
+	display: flex;
+	list-style: none;
+	width:50%;
+	margin-right: 2em;
+}
+
+#Navigation li{
+	margin-right:1em;
+	flex-grow: 1;
+	flex-basis:0;
+}
+
+.innerNav{
+	flex-direction:column;
+	align-items: center;
+	width:100%;
+	padding:0;
+	padding-top:5px;
 }
